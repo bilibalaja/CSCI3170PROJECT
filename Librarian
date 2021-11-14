@@ -1,0 +1,44 @@
+int choice;
+String Book_borrowing;
+String Book_returning;
+String Unreturned_books;
+
+        BufferedReader consoleInput=new BufferedReader(new InputStreamReader(System.in)); 
+        System.out.printin("What kind of operation would you like to perform?");
+        System.out.printin("1. Book Borrowing "); 
+        System.out.printin("2. Book Returning "); 
+        System.out.printin("3. List all un-returned book copies which are checked-out within a period"); 
+        System.out.printin("4. Return to the main menu"); 
+        System.out.printin("Enter Your Choice: "); 
+        choice=Integer.parseInt(consoleInput.readline());
+        
+        If (choice==1){
+
+            System.out.printin("Enter The User ID: "); 
+            System.out.printin ("Enter The Call Number: "); 
+            System.out.printin ("Enter The Copy Number: "); 
+            Book_borrowing= consoleInput.readline();
+            System.out.printin ("Book borrowing performed successfully."); 
+        }
+
+
+            else if (choice==2){
+            System.out.printin("Enter The User ID: "); 
+            System.out.printin ("Enter The Call Number: "); 
+            System.out.printin ("Enter The Copy Number: "); 
+            System.out.printin ("Enter Your Rating of the Book: "); 
+            Book_returning= consoleInput.readline();
+            System.out.printin ("Book returning performed successfully."); 
+            }
+            
+            else if (choice==3){
+            System.out.printin("Type in the starting date [dd/mm/yyyy] "); 
+            System.out.printin("Type in the ending date [dd/mm/yyyy] "); 
+            Unreturned_books= consoleInput.readline();
+            System.out.printin ("List of UnReturned Book: "); 
+            System.out.printin ("End of Query"); 
+            }
+            
+            else if (choice==4){
+            // return to main menu
+            }
